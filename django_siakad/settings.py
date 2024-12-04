@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_siakad',
     'master',
-    'akademik',
+    'akademik'
+    
 ]
 
 MIDDLEWARE = [
@@ -173,6 +174,33 @@ UNFOLD = {
                     },
                 ]
             },
+             {
+                "title": "Akademik",
+                "separator": True,
+                "collapsible": True,
+                "items": [
+                    {
+                        "title": "Tahun Akademik",
+                        "icon": "school",
+                        "link": reverse_lazy("admin:akademik_tahunakademik_changelist"),
+                    },
+                    {
+                        "title": "Mata Kuliah",
+                        "icon": "menu_book",
+                        "link": reverse_lazy("admin:akademik_matakuliah_changelist"),
+                    },
+                    {
+                        "title": "Jadwal",
+                        "icon": "schedule",
+                        "link": reverse_lazy("admin:akademik_jadwal_changelist"),
+                    },
+                    {
+                        "title": "KRS",
+                        "icon": "library_add",
+                        "link": reverse_lazy("admin:akademik_krs_changelist"),
+                    },                    
+                ]
+            },
             {
                 "title": "Master",
                 "separator": True,
@@ -200,6 +228,7 @@ UNFOLD = {
                     },                    
                 ]
             },
+            
             {
                 "title": "Pengaturan",
                 "separator": True,

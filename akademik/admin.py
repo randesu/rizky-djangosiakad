@@ -9,17 +9,17 @@ from .models import (
 # Register your models here.
 
 @admin.register(TahunAkademik)
-class ProdiAdmin(ModelAdmin):
+class TahunAkademikAdmin(ModelAdmin):
     pass
 
 @admin.register(MataKuliah)
-class ProdiAdmin(ModelAdmin):
+class MataKuliahAdmin(ModelAdmin):
     pass
 
 @admin.register(Jadwal)
-class ProdiAdmin(ModelAdmin):
+class JadwalAdmin(ModelAdmin):
     pass
 
 @admin.register(KRS)
-class ProdiAdmin(ModelAdmin):
+class KRSAdmin(ModelAdmin):
     pass
