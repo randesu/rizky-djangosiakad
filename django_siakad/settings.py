@@ -93,12 +93,12 @@ DATABASES = {
     #     "PORT": "5432",
     # }
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
-        "USER": "postgres.wpvdbxfxozxjubgjxedm",
-        "PASSWORD": "@Hikari123",
-        "HOST": "aws-0-ap-southeast-1.pooler.supabase.com",
-        "PORT": "6543",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "randesuyo$hikari",
+        "USER": "randesuyo",
+        "PASSWORD": "@hikari123",
+        "HOST": "randesuyo.mysql.pythonanywhere-services.com",
+        "PORT": "3306",
     }
 }
 
